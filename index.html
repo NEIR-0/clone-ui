@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clone Ui</title>
+
+    <link href="./src/output.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="overflow-x-hidden pb-24">
+    <nav
+      class="z-50 w-full fixed h-14 ps-2 pe-4 bg-white shadow-sm flex justify-between items-center"
+    >
+      <div class="w-[60px] h-full p-2">
+        <img
+          src="https://www.centralparkjakarta.com/wp-content/uploads/2018/10/bakmi-gm-060819.jpg"
+          alt=""
+          class="w-full h-full"
+        />
+      </div>
+      <div class="w-[120px] h-full flex justify-between items-center">
+        <i class="fa-solid fa-qrcode text-[25px]"></i>
+        <i class="fa-regular fa-envelope text-[25px]"></i>
+        <i class="fa-solid fa-ellipsis-vertical text-[25px]"></i>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <section class="w-full pt-14">
+      <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden md:h-96">
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="https://www.bakmigm.com/cfind/source/thumb/images/banner/cover_w1440_h500_tw2998_th1040_x12_y12_paw_1440x500.png"
+              class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="https://www.bakmigm.com/cfind/source/thumb/images/banner/cover_w768_h267_tw1579_th550_x121_y14_website_768x267-2.png"
+              class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="https://www.bakmigm.com/cfind/source/thumb/images/banner/cover_w768_h267_tw1589_th554_x18_y13_768x267-10.png"
+              class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="https://img.freepik.com/free-vector/cute-number-new-year-party-2024-cartoon-vector-icon-illustration-people-holiday-isolated-flat-vector_138676-10419.jpg?w=740&t=st=1705052302~exp=1705052902~hmac=32c6040e54038e37baeb1fb01554294386c6e5f333ffd411d0b4c0ab9c1189b5"
+              class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+        </div>
+        <!-- Slider indicators -->
+        <div
+          class="absolute z-30 flex -translate-x-1/2 bottom-3 left-1/2 space-x-3 rtl:space-x-reverse"
+        >
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="true"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- status -->
+    <section class="w-full p-5">
+      <!-- level -->
+      <div class="w-full bg-white shadow-md rounded-sm px-3">
+        <!-- title -->
+        <div class="w-full flex justify-between items-center py-4 mb-3">
+          <h1 class="text-[13px] font-bold">Your Level</h1>
+          <p class="text-[13px] font-bold text-orange-500">LEARN MORE</p>
+        </div>
+        <!-- grade -->
+        <div class="w-full flex justify-center items-center">
+          <!-- silver -->
+          <div
+            class="flex flex-col justify-center items-center w-9 h-9 rounded-full bg-gray-400 relative"
+          >
+            <i class="fas fa-crown text-white"></i>
+            <div
+              class="w-4 h-4 bg-lime-500 flex items-center justify-center rounded-full absolute right-0 bottom-0"
+            >
+              <i class="fas fa-check text-[12px] text-white"></i>
+            </div>
+            <p class="absolute top-full text-[10px] font-bold mt-2">Silver</p>
+          </div>
+          <!-- decoration -->
+          <div class="w-7 h-[1px] bg-black mx-3"></div>
+
+          <!-- gold -->
+          <div
+            class="flex flex-col justify-center items-center relative w-9 h-9 rounded-full bg-yellow-500 opacity-50"
+          >
+            <i class="fas fa-lock text-white"></i>
+            <p class="absolute top-full text-[10px] font-bold mt-2">Gold</p>
+          </div>
+          <!-- decoration -->
+          <div class="w-7 h-[1px] bg-black mx-3"></div>
+
+          <!-- platinum -->
+          <div
+            class="flex flex-col justify-center items-center w-9 h-9 rounded-full bg-slate-400 opacity-50 relative"
+          >
+            <i class="fas fa-lock text-white"></i>
+            <p class="absolute top-full text-[10px] font-bold mt-2">Platinum</p>
+          </div>
+        </div>
+
+        <!-- ranged -->
+        <div class="w-full">
+          <div class="h-2 rounded-full mt-10 bg-gray-100 relative opacity-60">
+            <div
+              class="h-4 w-4 rounded-full absolute right-0 bg-yellow-300 top-1/2 -translate-y-1/2 flex justify-center items-center"
+            >
+              <div class="w-1/2 h-1/2 bg-white rounded-full"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- des -->
+        <div class="w-full py-4">
+          <p class="text-[13px]">
+            Spend
+            <span class="font-semibold"> 3,500,001</span>
+            by
+            <span class="font-semibold">23 Nov 2024</span>
+            to reach
+            <span class="font-semibold">Gold</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- des -->
+      <div class="w-full rounded-md mb-10 mt-5 px-3 py-4 shadow-md bg-white">
+        <div class="w-full flex justify-between items-center">
+          <h1 class="text-[13px] font-bold">Bakmi GM Points</h1>
+          <h2 class="text-[13px] font-bold">40</h2>
+        </div>
+        <p class="text-gray-300 text-[12px]">
+          <span class="font-bold">40</span>
+          will expired
+          <span class="font-bold">22 Feb 2024.</span>
+          <span class="text-blue-500 underline font-bold">See Detail</span>
+        </p>
+      </div>
+
+      <!-- category -->
+      <div class="w-full my-5">
+        <div class="w-full flex justify-around">
+          <div
+            class="w-12 h-12 rounded-full bg-sky-200 flex justify-center items-center relative"
+          >
+            <img
+              src="https://cdn.icon-icons.com/icons2/943/PNG/512/shoppaymentorderbuy-20_icon-icons.com_73877.png"
+              alt=""
+              class="w-7 h-7"
+            />
+            <p class="absolute top-full text-[10px] mt-2">Order</p>
+          </div>
+          <div
+            class="w-12 h-12 rounded-full bg-red-200 flex justify-center items-center relative"
+          >
+            <img
+              src="https://cdn.icon-icons.com/icons2/742/PNG/512/shopping-cart-3_icon-icons.com_63429.png"
+              alt=""
+              class="w-7 h-7"
+            />
+            <p class="absolute top-full text-[10px] mt-2">Redeem</p>
+          </div>
+          <div
+            class="w-12 h-12 rounded-full bg-red-200 flex justify-center items-center relative"
+          >
+            <img
+              src="https://cdn.icon-icons.com/icons2/3626/PNG/512/sale_tag_discount_voucher_icon_227316.png"
+              alt=""
+              class="w-10 h-10"
+            />
+            <p class="absolute mt-2 top-full text-[10px] text-center w-[200%]">
+              My Vouchers
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full flex justify-around mt-10">
+          <div
+            class="w-12 h-12 rounded-full bg-blue-200 flex justify-center items-center relative"
+          >
+            <img
+              src="https://cdn.icon-icons.com/icons2/517/PNG/512/letter_icon-icons.com_51108.png"
+              alt=""
+              class="w-7 h-7"
+            />
+            <p class="absolute top-full text-[10px] mt-2">Privilage</p>
+          </div>
+          <div
+            class="w-12 h-12 rounded-full bg-purple-200 flex justify-center items-center relative"
+          >
+            <img
+              src="https://cdn.icon-icons.com/icons2/2076/PNG/512/calendar_date_event_schedule_icon_127191.png"
+              alt=""
+              class="w-7 h-7"
+            />
+            <p class="absolute top-full text-[10px] mt-2">History</p>
+          </div>
+          <div
+            class="w-12 h-12 rounded-full bg-green-200 flex justify-center items-center relative"
+          >
+            <img
+              src="https://cdn.icon-icons.com/icons2/945/PNG/512/Office_-08_icon-icons.com_74011.png"
+              alt=""
+              class="w-7 h-7"
+            />
+            <p class="absolute top-full text-[10px] mt-2 text-center w-[200%]">
+              Contact US
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- banner -->
+      <div
+        class="w-full h-[180px] shadow-md mb-5 mt-16 rounded-md overflow-hidden relative"
+      >
+        <!-- img -->
+        <img src="./public/banner.png" alt="banner" class="w-full h-full" />
+
+        <div class="absolute top-1/2 -translate-y-1/2 right-5 text-right">
+          <p class="font-bold text-[12px] mb-5 text-white">
+            Dapatkan 5 point dengan mengajak <br />teman kamu
+          </p>
+
+          <button class="py-3 px-4 bg-white rounded-md">
+            <h1 class="text-[12px] font-bold text-blue-500">REFER NOW</h1>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- menu -->
+    <section class="w-full py-5">
+      <!-- title -->
+      <div class="w-full flex justify-between items-center px-5">
+        <div class="">
+          <h1 class="text-[20px] font-bold">Redeem Your Rewards</h1>
+          <p class="text-[10px]">Earn more to get your rewards</p>
+        </div>
+        <h2 class="text-[15px] font-bold text-orange-500">SEE ALL</h2>
+      </div>
+      <div class="w-full ms-5 pe-5 mt-5">
+        <!-- card slider -->
+        <div class="swiper mySwiper w-full h-full">
+          <div class="swiper-wrapper">
+            <!-- list menus -->
+            <div class="swiper-slide">
+              <div
+                class="w-full h-full flex justify-center items-start flex-col"
+              >
+                <img
+                  src="https://www.bakmigm.com/cfind/source/thumb/images/menu/cover_w480_h480_iced-lychee-tea.jpg"
+                  alt="menus"
+                  class="w-full rounded-md mb-5 shadow-md"
+                />
+                <p class="text-[12px] font-bold">Iced Lychee Tea</p>
+                <p class="text-[12px] font-bold text-orange-500">40 pts</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="w-full h-full flex justify-center items-start flex-col"
+              >
+                <img
+                  src="https://www.bakmigm.com/cfind/source/thumb/images/menu/cover_w480_h480_es-teh-manis.jpg"
+                  alt="menus"
+                  class="w-full rounded-md mb-5 shadow-md"
+                />
+                <p class="text-[12px] font-bold">Es Teh Manis</p>
+                <p class="text-[12px] font-bold text-orange-500">30 pts</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="w-full h-full flex justify-center items-start flex-col"
+              >
+                <img
+                  src="https://www.bakmigm.com/cfind/source/thumb/images/menu/cover_w480_h480_5-bakmi-spc-gm.png"
+                  alt="menus"
+                  class="w-full rounded-md mb-5 shadow-md"
+                />
+                <p class="text-[12px] font-bold">Bakmi Spesial GM</p>
+                <p class="text-[12px] font-bold text-orange-500">50 pts</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="w-full h-full flex justify-center items-start flex-col"
+              >
+                <img
+                  src="https://www.bakmigm.com/cfind/source/thumb/images/menu/cover_w480_h480_whatsapp-image-2023-02-02-at-14.05.03.jpeg"
+                  alt="menus"
+                  class="w-full rounded-md mb-5 shadow-md"
+                />
+                <p class="text-[12px] font-bold">Nasi Ayam Saus Thai</p>
+                <p class="text-[12px] font-bold text-orange-500">45 pts</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- promotion -->
+    <section class="w-full pb-5">
+      <!-- title -->
+      <div class="w-full flex justify-between items-center px-5">
+        <div class="">
+          <h1 class="text-[20px] font-bold">Privileges</h1>
+          <p class="text-[10px]">Keep discovering promo and news</p>
+        </div>
+      </div>
+
+      <!-- banner promotions -->
+      <div class="w-full p-5">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="shadow-md rounded-md bg-white">
+            <img
+              class="h-[150px] w-full rounded-t-lg"
+              src="./public/platinum.png"
+              alt=""
+            />
+            <div class="w-full p-3">
+              <div class="flex justify-start items-center">
+                <h1 class="text-[15px] font-bold">Platinum</h1>
+                <img
+                  class="ms-1 w-4 h-4"
+                  src="https://cdn.icon-icons.com/icons2/4016/PNG/512/stone_shapes_jewelry_machine_slot_jewel_casino_gem_diamond_big_icon_255647.png"
+                  alt=""
+                />
+              </div>
+
+              <p class="text-[7px] text-gray-500">Exp. 20 Nov 2024</p>
+            </div>
+          </div>
+          <div class="shadow-md rounded-md bg-white">
+            <img
+              class="h-[150px] w-full rounded-t-lg"
+              src="./public/gold.png"
+              alt=""
+            />
+            <div class="w-full p-3">
+              <div class="flex justify-start items-center">
+                <h1 class="text-[15px] font-bold">Gold</h1>
+                <img
+                  class="ms-1 w-4 h-4"
+                  src="https://cdn.icon-icons.com/icons2/550/PNG/512/business-color_gold_icon-icons.com_53457.png"
+                  alt=""
+                />
+              </div>
+
+              <p class="text-[7px] text-gray-500">Exp. 1 Sep 2024</p>
+            </div>
+          </div>
+          <div class="shadow-md rounded-md bg-white">
+            <img
+              class="h-[150px] w-full rounded-t-lg"
+              src="https://katalogpromosi.com/wp-content/uploads/2023/03/bakmigmday_20062023-768x959.jpg"
+              alt=""
+            />
+            <div class="w-full p-3">
+              <div class="flex justify-start items-center">
+                <h1 class="text-[15px] font-bold">Makan Hemat</h1>
+                <img
+                  class="ms-1 w-4 h-4"
+                  src="https://cdn.iconscout.com/icon/free/png-512/free-money-bag-1607370-1364250.png?f=webp&w=256"
+                  alt=""
+                />
+              </div>
+
+              <p class="text-[7px] text-gray-500">Exp. 9 Oct 2024</p>
+            </div>
+          </div>
+          <div class="shadow-md rounded-md bg-white">
+            <img
+              class="h-[150px] w-full rounded-t-lg"
+              src="https://i0.wp.com/katalogpromosi.com/wp-content/uploads/2022/04/bakmi-gm_19052022.jpg?resize=640%2C799&ssl=1"
+              alt=""
+            />
+            <div class="w-full p-3">
+              <div class="flex justify-start items-center">
+                <h1 class="text-[15px] font-bold">Advance Order</h1>
+                <img
+                  class="ms-1 w-4 h-4"
+                  src="https://cdn.icon-icons.com/icons2/2806/PNG/512/smile_emo_emoji_emoticon_icon_178904.png"
+                  alt=""
+                />
+              </div>
+
+              <p class="text-[7px] text-gray-500">Exp. 20 Jan 2024</p>
+            </div>
+          </div>
+          <div class="shadow-md rounded-md bg-white">
+            <img
+              class="h-[150px] w-full rounded-t-lg"
+              src="https://s3.giladiskon.com/images/deals/deals-promo-bakmi-gm-paket-rame-mulai-dari-rp-125000-1699598105.jpg"
+              alt=""
+            />
+            <div class="w-full p-3">
+              <div class="flex justify-start items-center">
+                <h1 class="text-[15px] font-bold">Paket Rame</h1>
+                <img
+                  class="ms-1 w-4 h-4"
+                  src="https://cdn.iconscout.com/icon/free/png-512/free-money-bag-1607370-1364250.png?f=webp&w=256"
+                  alt=""
+                />
+              </div>
+
+              <p class="text-[7px] text-gray-500">Exp. 31 Dec 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- location -->
+    <section class="w-full px-5">
+      <!-- title -->
+      <div class="w-full flex justify-between items-center">
+        <div class="">
+          <h1 class="text-[20px] font-bold">Outlet Location</h1>
+          <p class="text-[10px]">Explore your options</p>
+        </div>
+      </div>
+
+      <!-- list -->
+      <div class="w-full mt-5 mb-10">
+        <div class="border-b-[1px] pb-2 border-b-gray-400">
+          <h1 class="text-[15px] font-medium text-gray-700">Citra Garder 6</h1>
+          <p class="text-[10px] text-gray-500 my-1">
+            Food Junction Citrea 6 Block L2-A Citra Garden City, Jakarta
+          </p>
+          <div class="w-full flex justify-start items-center text-gray-500">
+            <i class="fas fa-map-marker-alt text-[10px] me-2"></i>
+            <p class="text-[10px]">2,4 km</p>
+          </div>
+        </div>
+        <div class="border-b-[1px] pb-2 border-b-gray-400">
+          <h1 class="text-[15px] font-medium text-gray-700">Emporium Mall</h1>
+          <p class="text-[10px] text-gray-500 my-1">
+            Emporium Pluit Mall Lt. 2 Jalan Pluit Selatan Raya, Jakarta Utara
+          </p>
+          <div class="w-full flex justify-start items-center text-gray-500">
+            <i class="fas fa-map-marker-alt text-[10px] me-2"></i>
+            <p class="text-[10px]">6.2 km</p>
+          </div>
+        </div>
+        <div class="border-b-[1px] pb-2 border-b-gray-400">
+          <h1 class="text-[15px] font-medium text-gray-700">Puri Indah Mall</h1>
+          <p class="text-[10px] text-gray-500 my-1">
+            Bakmi GM Puri Indah Mall, Mall Puri Indah Lt. I Unit 103 JL. Puri
+            Agung Kembangan, Jakarta Barat
+          </p>
+          <div class="w-full flex justify-start items-center text-gray-500">
+            <i class="fas fa-map-marker-alt text-[10px] me-2"></i>
+            <p class="text-[10px]">6.4 km</p>
+          </div>
+        </div>
+        <div class="border-b-[1px] pb-2 border-b-gray-400">
+          <h1 class="text-[15px] font-medium text-gray-700">Lippo Mall Puri</h1>
+          <p class="text-[10px] text-gray-500 my-1">
+            Bakmi GM Lippo Mall Puri, Food Avenue Unit FSC-07, Gedung St. Moritz
+            Lippo Mall Puri Lantai I, JI. Puri Indah Boulevard Blok UI, Jakarta
+            Barat
+          </p>
+          <div class="w-full flex justify-start items-center text-gray-500">
+            <i class="fas fa-map-marker-alt text-[10px] me-2"></i>
+            <p class="text-[10px]">6.6 km</p>
+          </div>
+        </div>
+        <div class="border-b-[1px] pb-2 border-b-gray-400">
+          <h1 class="text-[15px] font-medium text-gray-700">
+            Terminal 3 Ultimate
+          </h1>
+          <p class="text-[10px] text-gray-500 my-1">
+            Bandara Soekarno Hatta Terminal 3 Ultimate Domestic Landside, Lantai
+            2 Ultimate Food Terminal, tangerang
+          </p>
+          <div class="w-full flex justify-start items-center text-gray-500">
+            <i class="fas fa-map-marker-alt text-[10px] me-2"></i>
+            <p class="text-[10px]">7.7 km</p>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="text-[13px] font-bold text-orange-500">SEE ALL</h1>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      });
+    </script>
+  </body>
+</html>
